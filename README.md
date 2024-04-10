@@ -5,13 +5,13 @@ GymPass style app.
 ## RFs (Requisitos funcionais)
 
 - [x] Deve ser possível se cadastrar;
-- [ ] Deve ser possível se autenticar;
+- [x] Deve ser possível se autenticar;
 - [ ] Deve ser possível obter os perfil de um usuário logado;
 - [ ] Deve ser possível obter u número de check-ins realizados pelo usuário logado;
 - [ ] Deve ser possível o usuário obeter o seu histórico de check-ins
 - [ ] Deve ser possível o usuário buscar academias próximas;
 - [ ] Deve ser possível o usuário buscar academias poelo nome;
-- [ ] Deve ser possível o usuário realizar check-in em uma academia;
+- [x] Deve ser possível o usuário realizar check-in em uma academia;
 - [ ] Deve ser possível validar o check-in de um  usauário; 
 - [ ] Deve ser possível cadastrar uma academia; 
 
