@@ -14,9 +14,11 @@ export async function getProfile(request: FastifyRequest, reply: FastifyReply) {
 
     const getProfileUseCase = makeGetProfileUseCase()
 
-    await getProfileUseCase.execute({
+    const user = await getProfileUseCase.execute({
       userId: id
     })
+
+    return reply.status(200).send({ user: user })
 
   } catch (err) {
     if (err instanceof InvalidCredentialsError) {
@@ -25,6 +27,4 @@ export async function getProfile(request: FastifyRequest, reply: FastifyReply) {
 
     throw err
   }
-
-  return reply.status(200).send({ user: id })
 }
